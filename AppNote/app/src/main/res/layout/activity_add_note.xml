@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <EditText
+        android:id="@+id/inputTitleNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Tiêu đề"
+        android:paddingStart="4dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputTimeNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTitleNote"
+        android:layout_margin="8dp"
+        android:hint="Thời gian"
+        android:paddingStart="4dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputContentNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTimeNote"
+        android:layout_margin="8dp"
+        android:hint="Nội dung"
+        android:paddingStart="4dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:background="@drawable/bg_them_ghi_chu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Thêm ghi chú"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
